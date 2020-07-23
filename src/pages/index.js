@@ -1,21 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <h1>Hello!</h1>
+    <p>
+      <span role="img" aria-label="Construction Sign">
+        🚧🚧🚧
+      </span>
+      We're under construction right now, please check back soon.
+      <span role="img" aria-label="Construction Sign">
+        🚧🚧🚧
+      </span>
+    </p>
+    <form
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="contact"
+    >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
+      <label htmlFor="name">
+        Name
+        <input type="text" name="name" id="name" />
+      </label>
+      <label htmlFor="email">
+        Email
+        <input type="email" name="email" id="email" />
+      </label>
+      <button type="submit">Send</button>
+    </form>
   </Layout>
 )
 
