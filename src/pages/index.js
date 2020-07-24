@@ -30,10 +30,11 @@ const IndexPage = () => (
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child notification is-info">
-              <p class="title">How do we do mentorship?</p>
+            <article class="tile is-child message is-info">
+              {/* <p class="title">How do we do mentorship?</p> */}
+              <div class="message-header">How do we do mentorship?</div>
               {/* <p class="subtitle">Bottom tile</p> */}
-              <p>
+              <div class="message-body">
                 We match a mentee to a mentor who has skills in a field that the
                 mentee wishes to learn about. They then brainstorm a project
                 together, and the mentee spends the rest of the program building
@@ -43,12 +44,12 @@ const IndexPage = () => (
                 end of the program, the mentee gives a presentation on their
                 project to demonstrate their new knowledge and skills gained
                 through their mentorship.
-              </p>
+              </div>
             </article>
           </div>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child notification is-danger">
+          <article class="tile is-child notification is-success">
             <p class="title">Our Value</p>
             <div class="content">
               <p>
@@ -65,14 +66,9 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div class="card">
+    {/* <div class="card">
       <header class="card-header">
         <p class="card-header-title">Let's talk!</p>
-        {/* <a href="#" class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </a> */}
       </header>
       <div class="card-content">
         <div class="content">
@@ -92,7 +88,6 @@ const IndexPage = () => (
               Email
               <input type="email" name="email" id="email" />
             </label>
-            {/* <button type="submit">Send</button> */}
           </form>
         </div>
       </div>
@@ -101,6 +96,36 @@ const IndexPage = () => (
           Send
         </button>
       </footer>
+    </div> */}
+    <div class="box">
+      <p>Let's talk!</p>
+      <form
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="e.g Alex Smith" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input
+              class="input"
+              type="email"
+              placeholder="e.g. alexsmith@gmail.com"
+            />
+          </div>
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </Layout>
 )
