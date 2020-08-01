@@ -624,3 +624,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
+img.rounded {
+  border-radius: 5px;
+  border: 5px solid #cfd8dc;
+}
