@@ -212,6 +212,9 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: rgba(247, 247, 247, 1);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 img {
   max-width: 100%;
@@ -624,7 +627,12 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+// Custom CSS
 img.rounded {
   border-radius: 5px;
   border: 5px solid #cfd8dc;
+}
+button.menu {
+  border: 2px solid #cfd8dc;
 }
