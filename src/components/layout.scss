@@ -636,3 +636,14 @@ img.rounded {
 button.menu {
   border: 2px solid #cfd8dc;
 }
+.bottom-right-element {
+  position: relative;
+  bottom: 5px !important;
+  right: 5px !important;
+  z-index: 3 !important;
+  // background-color: red !important;
+}
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}

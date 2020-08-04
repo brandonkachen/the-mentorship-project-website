@@ -1,77 +1,272 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import logo from "../images/logo.png"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-primary">
-              <p class="title">What do we do?</p>
-              {/* <p class="subtitle">Top tile</p> */}
-              <p>
-                We create one-on-one mentorship experiences that inspire
-                personal and professional growth for our mentors and mentees.
-              </p>
-            </article>
-            <article class="tile is-child notification is-warning">
-              <p class="title">Who we serve</p>
-              <p>
-                Our target audience for mentees are high schoolers who are
-                self-driven and are interested in building projects. Our target
-                audience for mentors are industry professionals who can use
-                their experience to guide mentees through their projects.
-              </p>
-            </article>
+    <section class="hero is-small has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img
+            class="rounded"
+            src={logo}
+            alt="The Mentorship Project"
+            style={{ height: 150 }}
+          />
+
+          <h1 class="title">The Mentorship Project</h1>
+          {/* <h2 class="subtitle">Creating long-lasting connections</h2> */}
+          <div class="tabs is-centered">
+            <ul>
+              <li class="is-active">
+                <a>About Us</a>
+              </li>
+              <li>
+                <a>Projects</a>
+              </li>
+              <li>
+                <a>Philosophy</a>
+              </li>
+            </ul>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child message is-info">
-              {/* <p class="title">How do we do mentorship?</p> */}
-              <div class="message-header">How do we do mentorship?</div>
-              {/* <p class="subtitle">Bottom tile</p> */}
-              <div class="message-body">
-                We match a mentee to a mentor who has skills in a field that the
-                mentee wishes to learn about. They then brainstorm a project
-                together, and the mentee spends the rest of the program building
-                it with guidance from their mentor. During this time, they
-                regularly meet with other mentor-mentee pairs to discuss their
-                progress and provide feedback and support to one another. At the
-                end of the program, the mentee gives a presentation on their
-                project to demonstrate their new knowledge and skills gained
-                through their mentorship.
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-success">
-            <p class="title">Our Value</p>
-            <div class="content">
-              <p>
-                Mentees learn hard skills related to the field they’re learning
-                about, improve soft skills like communication and creativity,
-                and grow their confidence in their own abilities to complete
-                difficult projects. Mentors experience selfless joy from
-                watching their mentees grow, reminisce about their own
-                highschool days, and feel a sense of giving back to the next
-                generation.
-              </p>
-            </div>
-          </article>
         </div>
       </div>
+    </section>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-5 is-vertical is-parent">
+        <div
+          class="tile is-child box"
+          style={{ border: "4px solid mediumslateblue" }}
+        >
+          <p class="title">
+            What is this program?
+            {/* <span role="img" aria-label="light-bulb">
+              💡
+            </span> */}
+          </p>
+          <p>
+            <b>The Mentorship Project</b> (TMP) is a one-on-one project-based
+            mentorship program that connects high school students and industry
+            professionals.
+          </p>
+          <p>
+            TMP operates in batches that each last approximately 10 weeks long.
+            All activities are performed virtually.
+          </p>
+        </div>
+        <div
+          class="tile is-child box"
+          style={{ border: "4px solid turquoise" }}
+        >
+          <p class="title">Who do you serve?</p>
+          <div class="content">
+            <p>
+              <b>Mentees</b> are high schoolers who are self-driven and are
+              interested in building projects.
+            </p>
+            <p>
+              {" "}
+              <b>Mentors</b> are industry professionals who have strong
+              expertise in a particular field and want to guide mentees through
+              their projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* <div class="tile is-1 is-vertical is-parent" /> */}
+      <div class="tile is-vertical is-parent">
+        <div class="tile is-child box" style={{ border: "4px solid gold" }}>
+          <p class="title">How does it work?</p>
+          <p class="subtitle">There are four distinct phases for each batch.</p>
+          {/* <div class="content is-vertical-center">  */}
+          <div class="content">
+            <ol>
+              <li>
+                <b>Connect</b>: Each mentee be paired with a mentor based on
+                interest and compatibility. 🔗{" "}
+              </li>
+              <li>
+                <b>Brainstorm</b>: Together, each pair will come up with a
+                project idea that will take 8 weeks to build. 📆
+              </li>{" "}
+              <li>
+                <b>Build</b>: Mentees build out their projects with guidance,
+                support, and accountability from their mentors. 🚀
+                <ul>
+                  <li>
+                    Each pair meets (virtually) once a week to discuss the
+                    mentee's project and progress. 🤝
+                  </li>
+                  <li>
+                    Mentors will help their mentees get up to speed on their
+                    fields of expertise. 📖
+                  </li>
+                  <li>
+                    Mentees work on their own projects for 3-6 hours per week
+                    between check-ins. 📝
+                  </li>{" "}
+                  <li>
+                    Each mentee also share their progress to their fellow
+                    students every other week. 💬
+                  </li>
+                </ul>
+              </li>{" "}
+              <li>
+                <b>Present</b>: At the end of the program, mentees will present
+                their work to our entire group and invited guests. 🎉
+              </li>
+            </ol>
+          </div>
+          {/* <div class="has-text-centered">
+            <button class="button is-primary is-light is-pulled-right">
+              See Past Projects
+            </button>
+          </div> */}
+        </div>
+        {/* <div
+          class="tile is-child box"
+          style={{ border: "4px solid mediumslateblue" }}
+        >
+          <p class="title">What value do you provide?</p>
+          <div class="content">
+            <p>
+              Mentees learn about their mentors’ fields of expertise through
+              projects they create from scratch. Mentors guide their mentees
+              throughout by providing advice and accountability, pushing them to
+              tackle difficult problems, and watching for pitfalls along the
+              way.
+            </p>
+          </div>
+        </div> */}
+      </div>
     </div>
-    {/* <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">Let's talk!</p>
-      </header>
-      <div class="card-content">
-        <div class="content">
+
+    {/* <div class="tile is-ancestor">
+      <div class="tile is-parent is-1">
+        <article class="tile is-child notification is-primary" />
+      </div>
+      <div class="tile is-parent">
+        <article
+          class="tile is-child box"
+          style={{ border: "4px solid mediumslateblue" }}
+        >
+          <h1 class="title">What value do you provide?</h1>
+          <div class="content">
+            <p>
+              <b>The Mentorship Project</b> (TMP) is a one-on-one virtual
+              mentorship program connecting mentees who are high school students
+              with mentors who are industry professionals. 💡
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent is-1"></div>
+    </div> */}
+
+    {/* <section class="section">
+      <div class="container">
+        <h1 class="title">Batch #1</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>,
+          like the one you're currently reading
+        </h2>
+      </div>
+    </section> */}
+
+    <div class="tile is-ancestor">
+      <div class="tile is-8 is-parent">
+        <article
+          class="tile is-child box"
+          style={{ border: "4px solid mediumslateblue" }}
+        >
+          <h1 class="title">Project Showcase</h1>
+          <p class="subtitle">Here are some of our past mentee projects.</p>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article
+          class="tile is-child box"
+          style={{ border: "4px solid turquoise" }}
+        >
+          <h1 class="title">What our alumni say about TMP</h1>
+          <div class="message-body">
+            <q>
+              I learned to talk to people in a more professional way and not
+              feel very awkward like I did before.
+            </q>
+          </div>
+
+          <br></br>
+
+          <div class="message-body">
+            <q>
+              I enjoyed meeting with my mentor every week because I knew I was
+              going to end the call with new knowledge.
+            </q>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div
+          class="tile is-child box"
+          style={{ border: "4px solid turquoise" }}
+        >
+          <h1 class="title">Value to Mentees</h1>
+          {/* <p class="subtitle">Here are some of our past mentee projects.</p> */}
+          <p>As a mentee, you'll:</p>
+          <ul>
+            <li>
+              learn more about a new field you may wish to build a career in
+            </li>
+            <li>grow your portfulio and resume</li>
+            <li>
+              expand your network through the other mentors and mentees you
+              meet.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article
+          class="tile is-child box"
+          style={{ border: "4px solid mediumslateblue" }}
+        >
+          <h1 class="title">Value to Mentors</h1>
+          <p>As a mentor, you'll:</p>
+          <ul>
+            <li>
+              experience joy and excitement when you see your mentee succeed,
+              knowing you've played a role in their success.
+            </li>
+            <li>
+              improve your communication skills by teaching someone else about a
+              topic you are knowledgeable about.
+            </li>
+            <li>
+              expand your network through the other mentors and mentees you
+              meet.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box" style={{ border: "4px solid gold" }}>
+          <h1 class="title">Let's get in touch</h1>
+          <p class="subtitle">
+            If you'd like to learn more, please sign up for updates. No spam,
+            promise!
+          </p>
           <form
             method="post"
             netlify-honeypot="bot-field"
@@ -80,52 +275,29 @@ const IndexPage = () => (
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
-            <label htmlFor="name">
-              Name
-              <input type="text" name="name" id="name" />
-            </label>
-            <label htmlFor="email">
-              Email
-              <input type="email" name="email" id="email" />
-            </label>
-          </form>
-        </div>
-      </div>
-      <footer class="card-footer">
-        <button type="submit" class="button card-footer-item">
-          Send
-        </button>
-      </footer>
-    </div> */}
-    <div class="box">
-      <p>Let's talk!</p>
-      <form
-        method="post"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-        name="contact"
-      >
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="field">
-          <label class="label">Name</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="e.g Alex Smith" />
-          </div>
-        </div>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="e.g Alex Smith" />
+              </div>
+            </div>
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input
-              class="input"
-              type="email"
-              placeholder="e.g. alexsmith@gmail.com"
-            />
-          </div>
-        </div>
-        <button type="submit">Send</button>
-      </form>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="e.g. alexsmith@gmail.com"
+                />
+              </div>
+            </div>
+            <button class="button is-primary" type="submit">
+              Send
+            </button>
+          </form>
+        </article>
+      </div>
     </div>
   </Layout>
 )
