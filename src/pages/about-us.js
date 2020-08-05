@@ -17,7 +17,8 @@ const AboutUsPage = () => (
           <p>
             <b>The Mentorship Project</b> (TMP) is a one-on-one project-based
             mentorship program that connects high school students and industry
-            professionals.
+            professionals. All participants are volunteers and do not receive or
+            provide compensation.
           </p>
           <p>
             TMP operates in batches that each last approximately 10 weeks long.
