@@ -3,10 +3,11 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import logo from "../images/logo.png"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+
 import AboutUsPage from "./about-us"
 import MenteeProjectsPage from "./mentee-projects"
 import PhilosophyPage from "./philosophy"
+import NextBatchPage from "./next-batch"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class IndexPage extends Component {
 
   tabs = () => {
     const selectedTab = this.state.selectedTab
-    const tabList = ["About Us", "Mentee Projects", "Philosophy"]
+    const tabList = ["About Us", "Mentee Projects", "Philosophy", "Next Batch"]
 
     return tabList.map(item =>
       selectedTab === item ? (
@@ -70,6 +71,8 @@ class IndexPage extends Component {
         return <MenteeProjectsPage />
       case "Philosophy":
         return <PhilosophyPage />
+      case "Next Batch":
+        return <NextBatchPage />
     }
   }
 
