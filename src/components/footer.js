@@ -49,11 +49,19 @@ const Footer = () => {
 
             <div class="control">
               <label class="radio">
-                <input type="radio" name="mentorship-selection" />
+                <input
+                  type="radio"
+                  name="Mentorship Selection"
+                  value="mentor"
+                />
                 mentor
               </label>
               <label class="radio">
-                <input type="radio" name="mentorship-selection" />
+                <input
+                  type="radio"
+                  name="Mentorship Selection"
+                  value="mentee"
+                />
                 mentee
               </label>
             </div>
