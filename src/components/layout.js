@@ -13,7 +13,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, tabs }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
+      <Header tabs={tabs} />
       <div
         style={{
           margin: `0 auto`,

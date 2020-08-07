@@ -40,21 +40,33 @@ const MenteeProjectsPage = () => (
             </li>
           </ul>
         </div> */}
-        <div class="message-body">
-          <q>
-            I learned to talk to people in a more professional way and not feel
-            very awkward like I did before.
-          </q>
-        </div>
+        <article class="message is-dark">
+          <div class="message-body">
+            <p>
+              <q>
+                I learned to talk to people in a more professional way and not
+                feel very awkward like I did before.
+              </q>
+            </p>
+            <figcaption>
+              &mdash; Carly, Sophomore at Mills High School
+            </figcaption>
+          </div>
+        </article>
 
         <br></br>
 
-        <div class="message-body">
-          <q>
-            I enjoyed meeting with my mentor every week because I knew I was
-            going to end the call with new knowledge.
-          </q>
-        </div>
+        <article class="message is-dark">
+          <div class="message-body">
+            <p>
+              <q>
+                I enjoyed meeting with my mentor every week because I knew I was
+                going to end the call with new knowledge.
+              </q>
+            </p>
+            <figcaption>&mdash; Gabi, Junior at Mills High School</figcaption>
+          </div>
+        </article>
 
         <br></br>
 

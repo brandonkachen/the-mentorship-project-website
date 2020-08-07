@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 
 import Layout from "../components/layout"
-import logo from "../images/logo.png"
 import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
@@ -9,11 +8,18 @@ import MenteeProjectsPage from "./mentee-projects"
 import PhilosophyPage from "./philosophy"
 import NextBatchPage from "./next-batch"
 
+const tabObjs = {
+  "About Us": <AboutUsPage />,
+  "Mentee Projects": <MenteeProjectsPage />,
+  Philosophy: <PhilosophyPage />,
+  "Next Batch": <NextBatchPage />,
+}
+
 class IndexPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedTab: "About Us",
+      selectedTab: Object.keys(tabObjs)[0],
     }
   }
 
@@ -23,69 +29,34 @@ class IndexPage extends Component {
     })
   }
 
-  tabs = () => {
-    const selectedTab = this.state.selectedTab
-    const tabList = ["About Us", "Mentee Projects", "Philosophy", "Next Batch"]
-
-    return tabList.map(item =>
-      selectedTab === item ? (
-        <li class="is-active">
-          <a onClick={() => this.changeSelectedTab(item)}>{item}</a>
-        </li>
-      ) : (
-        <li>
-          <a onClick={() => this.changeSelectedTab(item)}>{item}</a>
-        </li>
-      )
-    )
+  renderArticle = i => {
+    return <a onClick={() => this.changeSelectedTab(i)}>{i}</a>
   }
 
-  nav = () => {
+  renderTabList = selectedTab => {
     return (
-      <section class="hero is-small has-text-centered">
-        <div class="hero-body">
-          <div class="container">
-            <img
-              class="rounded"
-              src={logo}
-              alt="The Mentorship Project"
-              style={{ height: 150 }}
-            />
-
-            <h1 class="title">The Mentorship Project</h1>
-            {/* <h2 class="subtitle">Creating long-lasting connections</h2> */}
-          </div>
-        </div>
-        <div class="tabs is-centered">
-          <ul>{this.tabs()}</ul>
-        </div>
-      </section>
+      <div class="tabs is-centered">
+        <ul>
+          {Object.keys(tabObjs).map(i =>
+            selectedTab === i ? (
+              <li class="is-active">{this.renderArticle(i)}</li>
+            ) : (
+              <li>{this.renderArticle(i)}</li>
+            )
+          )}
+        </ul>
+      </div>
     )
-  }
-
-  renderPage = selectedTab => {
-    switch (selectedTab) {
-      case "About Us":
-        return <AboutUsPage />
-      case "Mentee Projects":
-        return <MenteeProjectsPage />
-      case "Philosophy":
-        return <PhilosophyPage />
-      case "Next Batch":
-        return <NextBatchPage />
-    }
   }
 
   render() {
     const selectedTab = this.state.selectedTab
+    const page = tabObjs[selectedTab]
 
     return (
-      <Layout>
+      <Layout tabs={this.renderTabList(selectedTab)}>
         <SEO title="Home" />
-
-        {this.nav()}
-
-        {this.renderPage(selectedTab)}
+        {page}
       </Layout>
     )
   }

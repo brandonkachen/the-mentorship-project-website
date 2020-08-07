@@ -29,7 +29,7 @@ const AboutUsPage = () => (
           class="tile is-child box"
           style={{ border: "4px solid turquoise" }}
         >
-          <p class="title">Who do you serve?</p>
+          <p class="title">Who does this program serve?</p>
           <div class="content">
             <p>
               <b>Mentees</b> are high schoolers who are self-driven and are
@@ -160,4 +160,5 @@ const AboutUsPage = () => (
   </>
 )
 
+AboutUsPage.displayName = "About Us"
 export default AboutUsPage
