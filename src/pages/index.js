@@ -5,13 +5,11 @@ import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
 import MenteeProjectsPage from "./mentee-projects"
-import PhilosophyPage from "./philosophy"
 import NextBatchPage from "./next-batch"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
   "Mentee Projects": <MenteeProjectsPage />,
-  Philosophy: <PhilosophyPage />,
   "Next Batch": <NextBatchPage />,
 }
 
@@ -35,7 +33,7 @@ class IndexPage extends Component {
 
   renderTabList = selectedTab => {
     return (
-      <div class="tabs is-centered">
+      <div class="tabs is-centered has-text-weight-bold">
         <ul>
           {Object.keys(tabObjs).map(i =>
             selectedTab === i ? (
