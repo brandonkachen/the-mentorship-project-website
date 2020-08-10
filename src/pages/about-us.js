@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import philosophyPages from "./philosophy"
+import philosophyPages from "../misc/philosophy"
 
 const PhilosophyComp = () => {
   const [page, setPage] = useState(0)
