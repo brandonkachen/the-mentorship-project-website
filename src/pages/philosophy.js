@@ -1,8 +1,6 @@
 import React from "react"
 import PaginationComp from "../components/pagination"
 
-const philosophyPageHeight = 175
-
 const summaryPage = (
   <>
     <p class="subtitle">Summary</p>

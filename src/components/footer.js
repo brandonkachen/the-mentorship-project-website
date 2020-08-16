@@ -26,7 +26,7 @@ const Footer = () => {
               <div class="content has-text-centered">
                 <div class="field is-grouped is-grouped-centered">
                   <div class="field">
-                    <label class="label">Name</label>
+                    <div class="label">Name</div>
                     <div class="control">
                       <input
                         class="input"
@@ -38,7 +38,7 @@ const Footer = () => {
                   </div>
 
                   <div class="field">
-                    <label class="label">Email</label>
+                    <div class="label">Email</div>
                     <div class="control">
                       <input
                         class="input"
