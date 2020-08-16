@@ -14,7 +14,7 @@ const Header = ({ tabs }) => (
       <div class="hero-body">
         <div class="container has-text-centered">
           <img
-            class="rounded"
+            class="gray-border"
             src={logo}
             alt="The Mentorship Project"
             style={{ height: 150 }}

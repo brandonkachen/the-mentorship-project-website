@@ -1,42 +1,5 @@
-import React, { useState } from "react"
-import philosophyPages from "../misc/philosophy"
-
-const PhilosophyComp = () => {
-  const [page, setPage] = useState(0)
-  const prevOn = page === 0
-  const nextOn = page === philosophyPages.length - 1
-
-  const philosophyPagination = (
-    <nav
-      class="pagination is-rounded"
-      role="navigation"
-      aria-label="pagination"
-    >
-      <a
-        class="pagination-previous"
-        disabled={prevOn}
-        onClick={() => !prevOn && setPage((page - 1) % philosophyPages.length)}
-      >
-        ←
-      </a>
-      <a
-        class="pagination-next"
-        disabled={nextOn}
-        onClick={() => !nextOn && setPage((page + 1) % philosophyPages.length)}
-      >
-        →
-      </a>
-      <ul class="pagination-list" />
-    </nav>
-  )
-
-  return (
-    <>
-      {philosophyPages[page]}
-      {philosophyPagination}
-    </>
-  )
-}
+import React from "react"
+import PhilosophyComp from "./philosophy"
 
 const AboutUsPage = () => {
   return (
@@ -45,7 +8,7 @@ const AboutUsPage = () => {
         <div class="tile is-5 is-vertical is-parent">
           <div
             class="tile is-child box"
-            style={{ border: "4px solid mediumslateblue" }}
+            style={{ border: "3px solid mediumslateblue" }}
           >
             <p class="title">What is this program?</p>
             <p>
@@ -56,18 +19,23 @@ const AboutUsPage = () => {
                 💡
               </span>
             </p>
-            <p>TMP operates completely virtually in 10 week batches.</p>
+            <p>
+              TMP operates completely virtually and in 10 week batches.{" "}
+              <span role="img" aria-label="ten">
+                🔟
+              </span>
+            </p>
           </div>
           <div
             class="tile is-child box"
-            style={{ border: "4px solid turquoise" }}
+            style={{ border: "3px solid turquoise" }}
           >
-            <p class="title">Our Philosophy</p>
+            {/* <p class="title">Our Philosophy</p> */}
             <PhilosophyComp />
           </div>
         </div>
         <div class="tile is-vertical is-parent">
-          <div class="tile is-child box" style={{ border: "4px solid gold" }}>
+          <div class="tile is-child box" style={{ border: "3px solid gold" }}>
             <p class="title">How does it work?</p>
             <p class="subtitle">
               There are four distinct phases for each batch.
@@ -147,22 +115,30 @@ const AboutUsPage = () => {
         </div>
       </div>
 
+      {/* <section class="section" /> */}
+
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <div
             class="tile is-child box content"
-            style={{ border: "4px solid mediumslateblue" }}
+            style={{ border: "3px solid mediumslateblue" }}
           >
-            <h1 class="title">Value to Mentees 🎏</h1>
+            <h1 class="title">Value to Mentees</h1>
             {/* <p class="subtitle">Here are some of our past mentee projects.</p> */}
-            <p>As a mentee, you'll:</p>
+            <p>
+              Mentees{" "}
+              <span role="img" aria-label="koinobori">
+                🎏
+              </span>
+              :
+            </p>
             <ul>
               <li>
-                Learn more about a new field you may wish to build a career in
+                Learn more about a new field they may wish to build a career in
               </li>
-              <li>Grow your portfolio and resume</li>
+              <li>Grow their portfolios and resumes</li>
               <li>
-                Expand your network through the other mentors and mentees you
+                Expand their networks through the other mentors and mentees they
                 meet.
               </li>
             </ul>
@@ -171,10 +147,16 @@ const AboutUsPage = () => {
         <div class="tile is-parent">
           <article
             class="tile is-child box content"
-            style={{ border: "4px solid turquoise" }}
+            style={{ border: "3px solid turquoise" }}
           >
             <h1 class="title">Value to Mentors</h1>
-            <p>As a mentor, you'll:</p>
+            <p>
+              Mentors{" "}
+              <span role="img" aria-label="nerd face">
+                🤓
+              </span>
+              :
+            </p>
             <ul>
               <li>
                 Experience joy and excitement when you see your mentee succeed,

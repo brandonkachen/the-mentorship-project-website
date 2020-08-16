@@ -1,56 +1,51 @@
 import React from "react"
+import PaginationComp from "../components/pagination"
 
 const NextBatchPage = () => (
   <div class="tile is-ancestor">
     <div class="tile is-parent">
       <article
         class="tile is-child box"
-        style={{ border: "4px solid mediumslateblue" }}
+        style={{ border: "3px solid turquoise" }}
       >
-        <p class="title">General Requirements</p>
-        <p>
-          Mentors and mentors are required have virtual calls for 1-2 hours per
-          week to plan and assess their progress, for 10 consecutive weeks. They
-          are also required to join all-hands meetings for 1 hour every 3 or 4
-          weeks.
-        </p>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box" style={{ border: "4px solid gold" }}>
-        <p class="title">Mentees we're looking for</p>
-        <p>
-          <span role="img" aria-label="construction-signs">
-            🚧🚧🚧
-          </span>
-          We're under construction right now, please check back soon.
-          <span role="img" aria-label="construction-sign">
-            🚧🚧🚧
-          </span>
-        </p>
+        <p class="title">Mentors we're looking for</p>
+        <div class="content">
+          <ul>
+            <li>
+              Able to dedicate 1-2 hours/week for 10 consecutive weeks to meet
+              with their mentee. 📞
+            </li>
+
+            <li>Love teaching and guiding. 🧑‍🏫</li>
+          </ul>
+        </div>
       </article>
     </div>
     <div class="tile is-parent">
       <article
-        class="tile is-child box"
-        style={{ border: "4px solid turquoise" }}
+        class="tile is-child content box"
+        style={{ border: "3px solid gold" }}
       >
-        <p class="title">Mentors we're looking for</p>
-        <div class="content">
-          {/* <p>
-            Mentees are required to spend 3-6 hours per week on their projects,
-            in addition to the call once per week.
-          </p> */}
-          <p>
-            <span role="img" aria-label="construction-signs">
-              🚧🚧🚧
-            </span>
-            We're under construction right now, please check back soon.
-            <span role="img" aria-label="construction-sign">
-              🚧🚧🚧
-            </span>
-          </p>
-        </div>
+        <p class="title">Mentees we're looking for</p>
+        <ul>
+          <li>
+            Able to dedicate 1-2 hours/week for 10 consecutive weeks to meet
+            with their mentor. 📞
+          </li>
+
+          <li>
+            Able to dedicate 3-6 hours/week for 8 consecutive weeks to work on
+            their projects. ⏳
+          </li>
+
+          <li>Learn quickly and effectively. 📚</li>
+
+          <li>Curious and eager to keep asking questions. 🧭</li>
+
+          <li>Hard working. 🛠</li>
+
+          <li> Love continually iterating on ideas. ❣️</li>
+        </ul>
       </article>
     </div>
   </div>

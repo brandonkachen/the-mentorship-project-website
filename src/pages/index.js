@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
-import MenteeProjectsPage from "./mentee-projects"
+import MenteeProjectsPage from "./mentee-projects/index"
 import NextBatchPage from "./next-batch"
 
 const tabObjs = {
