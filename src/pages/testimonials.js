@@ -99,27 +99,41 @@ const QuotesComp = () => {
     </div>,
   ]
 
-  return <PaginationComp title="What our alumni say about TMP" pages={pages} />
+  return <PaginationComp title="What Our Alumni Say About TMP" pages={pages} />
 }
-
-// export default QuotesComp
-
-const TestimonialsPage = () => (
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <article
-        class="tile is-child box content"
-        style={{ border: "3px solid turquoise" }}
-      >
-        <QuotesComp />
-      </article>
-    </div>
-    <div class="tile is-parent is-vertical">
-      <div
-        class="tile is-child box content"
-        style={{ border: "3px solid mediumslateblue" }}
-      >
-        <h1 class="title">Value to Mentees</h1>
+const ValueComp = () => {
+  const pages = [
+    <>
+      <p class="subtitle">
+        Mentors{" "}
+        <span role="img" aria-label="nerd face">
+          🤓
+        </span>
+      </p>{" "}
+      <div class="is-philosophy-page">
+        <ul>
+          <li>
+            Experienced joy and excitement when they saw their mentee succeed
+          </li>
+          <li>
+            Improved their communication skills by teaching someone else about a
+            topic they are knowledgeable on.
+          </li>
+          <li>
+            Expanded their network through the other mentors and mentees they
+            meet.
+          </li>
+        </ul>
+      </div>
+    </>,
+    <>
+      <p class="subtitle">
+        Mentees{" "}
+        <span role="img" aria-label="koinobori">
+          🎏
+        </span>
+      </p>
+      <div class="is-philosophy-page">
         <ul>
           <li>
             Learn more about a new field they may wish to build a career in
@@ -131,24 +145,103 @@ const TestimonialsPage = () => (
           </li>
         </ul>
       </div>
+    </>,
+  ]
+
+  return <PaginationComp title="How We Created Value For..." pages={pages} />
+}
+
+const TestimonialsPage = () => (
+  <div class="tile is-ancestor">
+    <div class="tile is-7 is-parent is-vertical">
+      <article
+        class="tile is-child box content"
+        style={{ border: "3px solid mediumslateblue" }}
+      >
+        {/* <ValueComp /> */}
+        <p class="title">Value to Mentors</p>
+        <p class="subtitle">Our mentors:</p>
+        <ul>
+          <li>
+            Experienced joy and excitement when they saw their mentee succeed
+          </li>
+          <li>
+            Improved their communication skills by teaching someone else about a
+            topic they are knowledgeable on.
+          </li>
+          <li>
+            Expanded their network through the other mentors and mentees they
+            meet.
+          </li>
+        </ul>
+      </article>
       <article
         class="tile is-child box content"
         style={{ border: "3px solid turquoise" }}
       >
-        <h1 class="title">Value to Mentors</h1>
+        {/* <ValueComp /> */}
+        <p class="title">Value to Mentees</p>
+        <p class="subtitle">Our mentees:</p>
         <ul>
           <li>
-            Experience joy and excitement when you see your mentee succeed,
-            knowing you've played a role in their success.
+            Learned more about a new field they may wish to build a career in
           </li>
+          <li>Growed their portfolios and resumes</li>
           <li>
-            Improve your communication skills by teaching someone else about a
-            topic you are knowledgeable about.
-          </li>
-          <li>
-            Expand your network through the other mentors and mentees you meet.
+            Expanded their networks through the other mentors and mentees they
+            meet.
           </li>
         </ul>
+      </article>
+      {/* <article
+        class="tile is-child box content"
+        style={{ border: "3px solid turquoise" }}
+      >
+        <h1 class="title">Some Stats</h1>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-parent">
+            <article class="tile is-child box content">
+              <p class="subtitle">
+                Number of <b>Mentees</b>
+              </p>
+              <p>3</p>
+            </article>
+            <article class="tile is-child box content">
+              <p class="subtitle">
+                Number of <b>Mentors</b>
+              </p>
+              <p>3</p>
+            </article>
+          </div>
+          <div class="tile is-vertical is-parent">
+            <article class="tile is-child box content">
+              <p class="subtitle">Overall satisfaction rate</p>
+              <p>100%</p>
+            </article>
+            <article class="tile is-child box content">
+              <p class="subtitle">
+                Enjoyment working with other mentees and mentors
+              </p>
+              <p>5/5</p>
+            </article>
+          </div>
+          <div class="tile is-vertical is-parent">
+            <article class="tile is-child box content">
+              Q: How would you rate The Mentorship Project overall? A: 10/10
+            </article>
+            <article class="tile is-child box content">
+              Q: How would you rate The Mentorship Project overall? A: 10/10
+            </article>
+          </div>
+        </div>
+      </article> */}
+    </div>
+    <div class="tile is-parent">
+      <article
+        class="tile is-child box content"
+        style={{ border: "3px solid gold" }}
+      >
+        <QuotesComp />
       </article>
     </div>
   </div>

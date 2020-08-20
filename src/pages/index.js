@@ -4,14 +4,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
+import PastWorkPage from "./past-work"
 import MenteeProjectsPage from "./mentee-projects/index"
 import NextBatchPage from "./next-batch"
 import TestimonialsPage from "./testimonials"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
-  Testimonials: <TestimonialsPage />,
-  "Mentee Projects": <MenteeProjectsPage />,
+  "Past Work": <PastWorkPage />,
+  // Testimonials: <TestimonialsPage />,
+  // "Mentee Projects": <MenteeProjectsPage />,
   "Next Batch": <NextBatchPage />,
 }
 

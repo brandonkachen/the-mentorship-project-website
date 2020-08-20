@@ -33,17 +33,6 @@ const rickProject = (
           for more information.
         </p>
       </div>
-      {/* <article class="message is-dark tile is-child box">
-        <div class="message-body">
-          <p>
-            <q>
-              ... since we have weekly meetings, I get a lot of practice to talk
-              and explain my concerns to other people.
-            </q>
-          </p>
-          <figcaption>&mdash; Rick, Freshman at UC Riverside</figcaption>
-        </div>
-      </article> */}
     </div>
   </div>
 )
@@ -77,17 +66,6 @@ const carlyProject = (
           for more information.
         </p>
       </div>
-      {/* <article class="message is-dark tile is-child box">
-        <div class="message-body">
-          <p>
-            <q>
-              I learned to talk to people in a more professional way and not
-              feel very awkward like I did before.
-            </q>
-          </p>
-          <figcaption>&mdash; Carly, Sophomore at Mills High School</figcaption>
-        </div>
-      </article> */}
     </div>
   </div>
 )
@@ -112,17 +90,6 @@ const gabiProject = (
           sem. Etiam finibus odio quis feugiat facilisis.
         </p>
       </div>
-      <article class="message is-dark tile is-child box">
-        <div class="message-body">
-          <p>
-            <q>
-              I enjoyed meeting with my mentor every week because I knew I was
-              going to end the call with new knowledge.
-            </q>
-          </p>
-          <figcaption>&mdash; Gabi, Junior at Mills High School</figcaption>
-        </div>
-      </article>
     </div>
   </div>
 )

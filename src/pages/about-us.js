@@ -102,14 +102,6 @@ const AboutUsPage = () => {
                 </li>
               </ol>
             </div>
-            {/* <nav
-            class="pagination is-rounded"
-            role="navigation"
-            aria-label="pagination"
-          >
-            <a class="pagination-next">Past Projects</a>
-            <ul class="pagination-list" />
-          </nav> */}
           </div>
         </div>
       </div>
