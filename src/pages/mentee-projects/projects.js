@@ -1,14 +1,18 @@
 import React from "react"
 import PaginationComp from "../../components/pagination"
 import GliderImg from "../../images/glider.png"
-import CarlyProject from "../../images/CarlyProject.png"
+import GabiProject from "../../images/GabiProject.png"
 import CarlyProjectWebpage from "../../images/CarlyProjectWebpage.png"
 
 const rickProject = (
   <div class="tile is-ancestor">
     <div class="tile is-parent">
-      <div class="tile is-child has-text-centered is-vertical-center box gray-border">
+      <div class="tile is-child has-text-centered box">
         <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
+        <figcaption>
+          A glider mod that can fly. Inspired from the film "Nausicaä of the
+          Valley of the Wind"
+        </figcaption>
       </div>
     </div>
     <div class="tile is-4 is-vertical is-parent">
@@ -16,9 +20,9 @@ const rickProject = (
         <p class="title">Rick and Brandon</p>
         <p>
           Rick had recently taken AP Computer Science at his high school and
-          wanted to apply his newfound skills to Minecraft. With his mentor
-          Brandon's help, Rick successfully created all the major types of
-          Minecraft "mods", or modifications. See his{" "}
+          wanted to apply his newfound skills to the game Minecraft. With the
+          help of his mentor Brandon, Rick successfully created all the major
+          types of Minecraft "mods", or modifications. See his{" "}
           <a
             href="https://docs.google.com/presentation/d/1rheR37CLtShKCorWbaud4zKbww7S9AVKB5NcpJPtMD0"
             target="_blank"
@@ -93,8 +97,8 @@ const gabiProject = (
     <div class="tile is-parent">
       <div class="tile is-child has-text-centered box">
         <img
-          src={CarlyProject}
-          alt="Carly's Project"
+          src={GabiProject}
+          alt="Gabi's Project"
           style={{ maxHeight: 500 }}
         />
       </div>

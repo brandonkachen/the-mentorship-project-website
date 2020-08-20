@@ -30,7 +30,6 @@ const AboutUsPage = () => {
             class="tile is-child box"
             style={{ border: "3px solid turquoise" }}
           >
-            {/* <p class="title">Our Philosophy</p> */}
             <PhilosophyComp />
           </div>
         </div>
@@ -46,8 +45,8 @@ const AboutUsPage = () => {
                 <li>
                   <b>Connect</b>: Each mentee is paired with a mentor based on
                   interest and compatibility.{" "}
-                  <span role="img" aria-label="link">
-                    🔗
+                  <span role="img" aria-label="waving hand">
+                    👋
                   </span>
                 </li>
                 <li>
@@ -112,66 +111,6 @@ const AboutUsPage = () => {
             <ul class="pagination-list" />
           </nav> */}
           </div>
-        </div>
-      </div>
-
-      {/* <section class="section" /> */}
-
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div
-            class="tile is-child box content"
-            style={{ border: "3px solid mediumslateblue" }}
-          >
-            <h1 class="title">Value to Mentees</h1>
-            {/* <p class="subtitle">Here are some of our past mentee projects.</p> */}
-            <p>
-              Mentees{" "}
-              <span role="img" aria-label="koinobori">
-                🎏
-              </span>
-              :
-            </p>
-            <ul>
-              <li>
-                Learn more about a new field they may wish to build a career in
-              </li>
-              <li>Grow their portfolios and resumes</li>
-              <li>
-                Expand their networks through the other mentors and mentees they
-                meet.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article
-            class="tile is-child box content"
-            style={{ border: "3px solid turquoise" }}
-          >
-            <h1 class="title">Value to Mentors</h1>
-            <p>
-              Mentors{" "}
-              <span role="img" aria-label="nerd face">
-                🤓
-              </span>
-              :
-            </p>
-            <ul>
-              <li>
-                Experience joy and excitement when you see your mentee succeed,
-                knowing you've played a role in their success.
-              </li>
-              <li>
-                Improve your communication skills by teaching someone else about
-                a topic you are knowledgeable about.
-              </li>
-              <li>
-                Expand your network through the other mentors and mentees you
-                meet.
-              </li>
-            </ul>
-          </article>
         </div>
       </div>
     </>

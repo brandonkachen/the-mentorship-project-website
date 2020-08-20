@@ -6,9 +6,11 @@ import SEO from "../components/seo"
 import AboutUsPage from "./about-us"
 import MenteeProjectsPage from "./mentee-projects/index"
 import NextBatchPage from "./next-batch"
+import TestimonialsPage from "./testimonials"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
+  Testimonials: <TestimonialsPage />,
   "Mentee Projects": <MenteeProjectsPage />,
   "Next Batch": <NextBatchPage />,
 }
