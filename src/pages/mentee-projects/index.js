@@ -3,14 +3,12 @@ import ProjectsComp from "./projects"
 
 const MenteeProjectsPage = () => (
   <>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
+    <div className="tile is-ancestor">
+      <div className="tile is-parent">
         <article
-          class="tile is-child box"
-          style={{ border: "3px solid mediumslateblue" }}
+          className="tile is-child box"
+          style={{ border: "2px solid mediumslateblue" }}
         >
-          {/* <h1 class="title">Project Showcase</h1> */}
-          {/* <p class="subtitle">Our past mentees' projects.</p> */}
           <ProjectsComp />
         </article>
       </div>

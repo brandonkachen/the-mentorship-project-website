@@ -3,8 +3,8 @@ import PaginationComp from "../components/pagination"
 
 const summaryPage = (
   <>
-    <p class="subtitle">Summary</p>
-    <div class="content is-philosophy-page">
+    <p className="subtitle">Summary</p>
+    <div className="content is-philosophy-page">
       <ul>
         <li>
           Good mentorship is a symbiotic relationship.{" "}
@@ -32,8 +32,8 @@ const summaryPage = (
 
 const goodMentorshipPage = (
   <>
-    <p class="subtitle">Good mentorship</p>
-    <p class="content is-philosophy-page">
+    <p className="subtitle">Good mentorship</p>
+    <p className="content is-philosophy-page">
       Good mentorship is a positive sum game for all involved. Mentors see the
       potential in their mentees and push them to achieve it. Mentees spark
       selfless joy in their mentees when they reach their goals. Both parties
@@ -48,8 +48,8 @@ const goodMentorshipPage = (
 
 const personalProjectsPage = (
   <>
-    <p class="subtitle">Personal Projects</p>
-    <p class="content is-philosophy-page">
+    <p className="subtitle">Personal Projects</p>
+    <p className="content is-philosophy-page">
       Personal projects allow one to own a problem or idea they want to solve.
       As a result, they are more likely to feel motivated and creative when
       working on it. They are free to change it as they see fit, safe to fail
@@ -64,8 +64,8 @@ const personalProjectsPage = (
 
 const variedInterestsPage = (
   <>
-    <p class="subtitle">Varied Interests</p>
-    <p class="content is-philosophy-page">
+    <p className="subtitle">Varied Interests</p>
+    <p className="content is-philosophy-page">
       People aren't destined for only one career path. Everyone's career
       interests are varied based on their background, natural curiosity, etc.
       but it is uncommon for one to dabble and learn about them more. We believe

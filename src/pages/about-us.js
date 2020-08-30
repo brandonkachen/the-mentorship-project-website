@@ -5,16 +5,16 @@ import PaginationComp from "../components/pagination"
 const ValueComp = () => {
   const pages = [
     <>
-      <p class="subtitle">
+      <p className="subtitle">
         For Mentors{" "}
         <span role="img" aria-label="owl">
           🦉
         </span>
       </p>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+      <div className="tile is-ancestor">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Impart Your Knowledge</b>
             </p>
             <p>
@@ -23,9 +23,9 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Grow Your Leadership Skills</b>
             </p>
             <p>
@@ -35,9 +35,9 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Expand Your Network</b>
             </p>
             <p>
@@ -50,16 +50,16 @@ const ValueComp = () => {
       </div>
     </>,
     <>
-      <p class="subtitle">
+      <p className="subtitle">
         For Mentees{" "}
         <span role="img" aria-label="koinobori">
           🎏
         </span>
       </p>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+      <div className="tile is-ancestor">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Kickstart your career</b>
             </p>
             <p>
@@ -69,9 +69,9 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Grow Your Porfolio</b>
             </p>
             <p>
@@ -80,9 +80,9 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="subtitle">
+        <div className="tile is-parent">
+          <article className="tile is-child box">
+            <p className="subtitle">
               <b>Expand Your Network</b>
             </p>
             <p>
@@ -102,13 +102,13 @@ const ValueComp = () => {
 const AboutUsPage = () => {
   return (
     <>
-      <div class="tile is-ancestor">
-        <div class="tile is-5 is-vertical is-parent">
+      <div className="tile is-ancestor">
+        <div className="tile is-5 is-vertical is-parent">
           <div
-            class="tile is-child box"
-            style={{ border: "3px solid mediumslateblue" }}
+            className="tile is-child box"
+            style={{ border: "2px solid mediumslateblue" }}
           >
-            <p class="title">What is this program?</p>
+            <p className="title">What is this program?</p>
             <p>
               <b>The Mentorship Project</b> (TMP) is a one-on-one project-based
               volunteer mentorship program that connects high school students
@@ -125,20 +125,23 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div
-            class="tile is-child box"
-            style={{ border: "3px solid turquoise" }}
+            className="tile is-child box"
+            style={{ border: "2px solid turquoise" }}
           >
             <PhilosophyComp />
           </div>
         </div>
-        <div class="tile is-vertical is-parent">
-          <div class="tile is-child box" style={{ border: "3px solid gold" }}>
-            <p class="title">How does it work?</p>
-            <p class="subtitle">
+        <div className="tile is-vertical is-parent">
+          <div
+            className="tile is-child box"
+            style={{ border: "2px solid gold" }}
+          >
+            <p className="title">How does it work?</p>
+            <p className="subtitle">
               There are four distinct phases for each batch.
             </p>
-            {/* <div class="content"> */}
-            <div class="content is-vertical-center">
+            {/* <div className="content"> */}
+            <div className="content is-vertical-center">
               <ol>
                 <li>
                   <b>Connect</b>: Each mentee is paired with a mentor based on
@@ -204,13 +207,13 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div class="section" />
+      <div className="section" />
 
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
+      <div className="tile is-ancestor">
+        <div className="tile is-parent">
           <article
-            class="tile is-child box content"
-            style={{ border: "3px solid mediumslateblue" }}
+            className="tile is-child box content"
+            style={{ border: "2px solid mediumslateblue" }}
           >
             <ValueComp />
           </article>

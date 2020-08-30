@@ -1,13 +1,13 @@
 import React from "react"
 import PaginationComp from "../../components/pagination"
 import GliderImg from "../../images/glider.png"
-import GabiProject from "../../images/GabiProject.png"
+import GabiProjectImg from "../../images/GabiProject.png"
 import CarlyProjectWebpage from "../../images/CarlyProjectWebpage.png"
 
-const rickProject = (
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <div class="tile is-child has-text-centered box">
+const RickProject = (
+  <div className="tile is-ancestor">
+    <div className="tile is-parent">
+      <div className="tile is-child has-text-centered box">
         <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
         <figcaption>
           A glider mod that can fly. Inspired from the film "Nausicaä of the
@@ -15,9 +15,9 @@ const rickProject = (
         </figcaption>
       </div>
     </div>
-    <div class="tile is-4 is-vertical is-parent">
-      <div class="tile is-child box">
-        <p class="title">Rick and Brandon</p>
+    <div className="tile is-4 is-vertical is-parent">
+      <div className="tile is-child box">
+        <p className="title">Rick and Brandon</p>
         <p>
           Rick had recently taken AP Computer Science at his high school and
           wanted to apply his newfound skills to the game Minecraft. With the
@@ -37,20 +37,24 @@ const rickProject = (
   </div>
 )
 
-const carlyProject = (
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <div class="tile is-child has-text-centered box gray-border">
+const CarlyProject = (
+  <div className="tile is-ancestor">
+    <div className="tile is-parent">
+      <div className="tile is-child has-text-centered box">
         <img
           src={CarlyProjectWebpage}
           alt="Carly's Project"
           style={{ maxHeight: 500 }}
         />
+
+        <figcaption>
+          A guide to the year 2020, written by Carly in 2020 for Carly in 2019.
+        </figcaption>
       </div>
     </div>
-    <div class="tile is-4 is-vertical is-parent">
-      <div class="tile is-child box">
-        <p class="title">Carly and Bijun</p>
+    <div className="tile is-4 is-vertical is-parent">
+      <div className="tile is-child box">
+        <p className="title">Carly and Bijun</p>
         <p>
           Carly was curious about design because she likes to draw and wanted to
           hone her storytelling skills. With her mentor Bijun's help, Carly
@@ -70,20 +74,23 @@ const carlyProject = (
   </div>
 )
 
-const gabiProject = (
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <div class="tile is-child has-text-centered box">
+const GabiProject = (
+  <div className="tile is-ancestor">
+    <div className="tile is-parent">
+      <div className="tile is-child has-text-centered box">
         <img
-          src={GabiProject}
+          src={GabiProjectImg}
           alt="Gabi's Project"
           style={{ maxHeight: 500 }}
         />
+        <figcaption>
+          A business proposal for a student afterschool tutoring program.
+        </figcaption>
       </div>
     </div>
-    <div class="tile is-4 is-vertical is-parent">
-      <div class="tile is-child box">
-        <p class="title">Gabi and Chris</p>
+    <div className="tile is-4 is-vertical is-parent">
+      <div className="tile is-child box">
+        <p className="title">Gabi and Chris</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
           magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
@@ -94,10 +101,11 @@ const gabiProject = (
   </div>
 )
 
-const projectPages = [rickProject, carlyProject, gabiProject]
-
 const ProjectsComp = () => (
-  <PaginationComp title="Project Showcase" pages={projectPages} />
+  <PaginationComp
+    title="Project Showcase"
+    pages={[RickProject, CarlyProject, GabiProject]}
+  />
 )
 
 export default ProjectsComp

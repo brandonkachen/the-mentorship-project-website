@@ -7,30 +7,30 @@ const PaginationComp = ({ title, pages }) => {
 
   return (
     <>
-      <p class="title">{title}</p>
+      <p className="title">{title}</p>
 
       {pages[page]}
       <nav
-        class="pagination is-rounded"
+        className="pagination is-rounded"
         role="navigation"
         aria-label="pagination"
       >
-        <a
-          class="pagination-previous"
+        <button
+          className="button is-light pagination-previous"
           disabled={prevOn}
           onClick={() => !prevOn && setPage((page - 1) % pages.length)}
         >
           ←
-        </a>
-        <a
-          class="pagination-next"
+        </button>
+        <button
+          className="button is-light pagination-next"
           disabled={nextOn}
           onClick={() => !nextOn && setPage((page + 1) % pages.length)}
         >
           →
-        </a>
+        </button>
 
-        <ul class="pagination-list" />
+        <ul className="pagination-list" />
       </nav>
     </>
   )

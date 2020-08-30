@@ -3,16 +3,16 @@ import React from "react"
 const Footer = () => {
   return (
     <>
-      <section class="section" />
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child" />
+      <section className="section" />
+      <div className="tile is-ancestor">
+        <div className="tile is-parent">
+          <div className="tile is-child" />
           <article
-            class="tile is-6 is-child box"
-            style={{ border: "3px solid #cfd8dc" }}
+            className="tile is-6 is-child box"
+            style={{ border: "2px solid #cfd8dc" }}
           >
-            <h1 class="title">Let's get in touch</h1>
-            <p class="subtitle">
+            <h1 className="title">Let's get in touch</h1>
+            <p className="subtitle">
               If you'd like to learn more, please sign up for updates.
             </p>
             <form
@@ -23,13 +23,13 @@ const Footer = () => {
             >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="sign-up" />
-              <div class="content has-text-centered">
-                <div class="field is-grouped is-grouped-centered">
-                  <div class="field">
-                    <div class="label">Name</div>
-                    <div class="control">
+              <div className="content has-text-centered">
+                <div className="field is-grouped is-grouped-centered">
+                  <div className="field">
+                    <div className="label">Name</div>
+                    <div className="control">
                       <input
-                        class="input"
+                        className="input"
                         type="text"
                         placeholder="e.g Alex Smith"
                         name="name"
@@ -37,11 +37,11 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div class="field">
-                    <div class="label">Email</div>
-                    <div class="control">
+                  <div className="field">
+                    <div className="label">Email</div>
+                    <div className="control">
                       <input
-                        class="input"
+                        className="input"
                         type="email"
                         placeholder="e.g. alexsmith@gmail.com"
                         name="email"
@@ -52,8 +52,8 @@ const Footer = () => {
 
                 <p>I want to be a:</p>
 
-                <div class="control">
-                  <label class="radio">
+                <div className="control">
+                  <label className="radio">
                     <input
                       type="radio"
                       name="Mentorship Selection"
@@ -61,7 +61,7 @@ const Footer = () => {
                     />
                     mentor
                   </label>
-                  <label class="radio">
+                  <label className="radio">
                     <input
                       type="radio"
                       name="Mentorship Selection"
@@ -70,13 +70,13 @@ const Footer = () => {
                     mentee
                   </label>
                 </div>
-                <button class="button is-primary" type="submit">
+                <button className="button is-primary" type="submit">
                   Send
                 </button>
               </div>
             </form>
           </article>
-          <div class="tile is-child" />
+          <div className="tile is-child" />
         </div>
       </div>
     </>

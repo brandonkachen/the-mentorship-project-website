@@ -4,13 +4,13 @@ import MenteeProjectsPage from "./mentee-projects/index"
 
 const PastWorkPage = () => (
   <>
-    {/* <div class="tile is-ancestor">
-      <div class="tile is-parent">
+    {/* <div className="tile is-ancestor">
+      <div className="tile is-parent">
         <article
-          class="tile is-child box"
-          style={{ border: "3px solid mediumslateblue" }}
+          className="tile is-child box"
+          style={{ border: "2px solid mediumslateblue" }}
         >
-          <p class="title">Our first batch</p>
+          <p className="title">Our first batch</p>
 
           <p>
             Our first batch consisted of three mentees and three mentors. Each
