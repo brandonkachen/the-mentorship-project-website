@@ -21,8 +21,6 @@ const PastWorkPage = () => (
     </div> */}
     <MenteeProjectsPage />
 
-    <section class="section" />
-
     <TestimonialsPage />
   </>
 )

@@ -153,88 +153,67 @@ const ValueComp = () => {
 
 const TestimonialsPage = () => (
   <div class="tile is-ancestor">
-    <div class="tile is-7 is-parent is-vertical">
+    <div class="tile is-7 is-parent">
       <article
-        class="tile is-child box content"
-        style={{ border: "3px solid mediumslateblue" }}
-      >
-        {/* <ValueComp /> */}
-        <p class="title">Value to Mentors</p>
-        <p class="subtitle">Our mentors:</p>
-        <ul>
-          <li>
-            Experienced joy and excitement when they saw their mentee succeed
-          </li>
-          <li>
-            Improved their communication skills by teaching someone else about a
-            topic they are knowledgeable on.
-          </li>
-          <li>
-            Expanded their network through the other mentors and mentees they
-            meet.
-          </li>
-        </ul>
-      </article>
-      <article
-        class="tile is-child box content"
-        style={{ border: "3px solid turquoise" }}
-      >
-        {/* <ValueComp /> */}
-        <p class="title">Value to Mentees</p>
-        <p class="subtitle">Our mentees:</p>
-        <ul>
-          <li>
-            Learned more about a new field they may wish to build a career in
-          </li>
-          <li>Growed their portfolios and resumes</li>
-          <li>
-            Expanded their networks through the other mentors and mentees they
-            meet.
-          </li>
-        </ul>
-      </article>
-      {/* <article
         class="tile is-child box content"
         style={{ border: "3px solid turquoise" }}
       >
         <h1 class="title">Some Stats</h1>
         <div class="tile is-ancestor">
-          <div class="tile is-vertical is-parent">
-            <article class="tile is-child box content">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
               <p class="subtitle">
                 Number of <b>Mentees</b>
               </p>
               <p>3</p>
             </article>
-            <article class="tile is-child box content">
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
               <p class="subtitle">
                 Number of <b>Mentors</b>
               </p>
               <p>3</p>
             </article>
           </div>
-          <div class="tile is-vertical is-parent">
-            <article class="tile is-child box content">
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
               <p class="subtitle">Overall satisfaction rate</p>
               <p>100%</p>
             </article>
-            <article class="tile is-child box content">
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
               <p class="subtitle">
                 Enjoyment working with other mentees and mentors
               </p>
               <p>5/5</p>
             </article>
           </div>
-          <div class="tile is-vertical is-parent">
-            <article class="tile is-child box content">
-              Q: How would you rate The Mentorship Project overall? A: 10/10
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="subtitle">
+                % of mentees who felt TMP helped improve their{" "}
+                <b>communication skills. </b>
+              </p>
+              <p>100%</p>
             </article>
-            <article class="tile is-child box content">
-              Q: How would you rate The Mentorship Project overall? A: 10/10
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="subtitle">
+                % of mentees who felt TMP taught them new{" "}
+                <b>technical skills. </b>
+              </p>
+              <p>100%</p>
             </article>
           </div>
         </div>
-      </article> */}
+      </article>
     </div>
     <div class="tile is-parent">
       <article

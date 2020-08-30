@@ -11,7 +11,7 @@ import TestimonialsPage from "./testimonials"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
-  "Past Work": <PastWorkPage />,
+  "Past Batch": <PastWorkPage />,
   // Testimonials: <TestimonialsPage />,
   // "Mentee Projects": <MenteeProjectsPage />,
   "Next Batch": <NextBatchPage />,
