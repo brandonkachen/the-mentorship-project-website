@@ -656,6 +656,11 @@ pre tt:after {
     height: 175px;
   }
 }
+.is-showcase-page {
+  @include desktop {
+    height: 550px;
+  }
+}
 .nav-tabs {
   border-bottom: none;
 }

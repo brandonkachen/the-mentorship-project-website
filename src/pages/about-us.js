@@ -12,6 +12,7 @@ const ValueComp = () => {
         </span>
       </p>
       <div className="tile is-ancestor">
+        <div className="tile is-1 is-parent" />
         <div className="tile is-parent">
           <article className="tile is-child box">
             <p className="subtitle">
@@ -47,6 +48,7 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
+        <div className="tile is-1 is-parent" />
       </div>
     </>,
     <>
@@ -57,6 +59,8 @@ const ValueComp = () => {
         </span>
       </p>
       <div className="tile is-ancestor">
+        <div className="tile is-1 is-parent" />
+
         <div className="tile is-parent">
           <article className="tile is-child box">
             <p className="subtitle">
@@ -92,11 +96,12 @@ const ValueComp = () => {
             </p>
           </article>
         </div>
+        <div className="tile is-1 is-parent" />
       </div>
     </>,
   ]
 
-  return <PaginationComp title="The Value of Mentorship" pages={pages} />
+  return <PaginationComp title="The Value of a TMP Mentorship" pages={pages} />
 }
 
 const AboutUsPage = () => {

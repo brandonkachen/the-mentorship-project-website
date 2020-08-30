@@ -111,6 +111,7 @@ const TestimonialsPage = () => (
       >
         <h1 className="title">Some Stats</h1>
         <div className="tile is-ancestor">
+          <div className="tile is-1 is-parent" />
           <div className="tile is-parent">
             <article className="tile is-child box">
               <p className="subtitle">
@@ -127,8 +128,11 @@ const TestimonialsPage = () => (
               <p>3</p>
             </article>
           </div>
+          <div className="tile is-1 is-parent" />
         </div>
         <div className="tile is-ancestor">
+          <div className="tile is-1 is-parent" />
+
           <div className="tile is-parent">
             <article className="tile is-child box">
               <p className="subtitle">Overall satisfaction rate</p>
@@ -143,8 +147,10 @@ const TestimonialsPage = () => (
               <p>5/5</p>
             </article>
           </div>
+          <div className="tile is-1 is-parent" />
         </div>
         <div className="tile is-ancestor">
+          <div className="tile is-1 is-parent" />
           <div className="tile is-parent">
             <article className="tile is-child box">
               <p className="subtitle">
@@ -163,6 +169,7 @@ const TestimonialsPage = () => (
               <p>100%</p>
             </article>
           </div>
+          <div className="tile is-1 is-parent" />
         </div>
       </article>
     </div>
