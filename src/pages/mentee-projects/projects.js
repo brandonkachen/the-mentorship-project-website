@@ -8,10 +8,23 @@ const RickProject = (
   <div className="tile is-ancestor">
     <div className="tile is-parent">
       <div className="tile is-child has-text-centered box">
-        <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
+        {/* <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
         <figcaption>
           A glider mod that can fly. Inspired from the film "Nausicaä of the
           Valley of the Wind"
+        </figcaption> */}
+
+        <video controls>
+          <source
+            src="https://s3-website-bucket-04eeef3.s3.amazonaws.com/rick-mc-mod-montage.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>
+          Minecraft modifications ("mods") that Rick made as he learned how to
+          develop for the game. <br></br> Each item shown is a custom developed
+          mod.
         </figcaption>
       </div>
     </div>
