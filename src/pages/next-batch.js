@@ -79,19 +79,35 @@ const NextBatchPage = () => (
           </ul>
         </article>
       </div>
-      <div className="tile is-parent">
+      <div className="tile is-vertical is-parent">
         <article
           className="tile is-child box"
           style={{ border: "2px solid gold" }}
         >
+          <p className="title">General Info</p>
+          <div className="content">
+            <p>
+              🚧🚧🚧We're under construction right now, please check back
+              soon.🚧🚧🚧
+            </p>
+          </div>
+        </article>
+        <article
+          className="tile is-child box"
+          style={{ border: "2px solid mediumslateblue" }}
+        >
           <p className="title">Timeline</p>
           <div className="content">
-            <ul>
+            <p>
+              🚧🚧🚧We're under construction right now, please check back
+              soon.🚧🚧🚧
+            </p>
+            {/* <ul>
               <li>Mentor volunteer clearances begin: October 1st</li>
 
               <li>Program start: October 14th</li>
               <li>...</li>
-            </ul>
+            </ul> */}
           </div>
         </article>
       </div>
