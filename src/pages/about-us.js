@@ -4,7 +4,7 @@ import PaginationComp from "../components/pagination"
 
 const ValueComp = () => {
   const pages = [
-    <>
+    <div className="content is-value-page">
       <p className="subtitle">
         For Mentors{" "}
         <span role="img" aria-label="owl">
@@ -50,8 +50,8 @@ const ValueComp = () => {
         </div>
         <div className="tile is-1 is-parent" />
       </div>
-    </>,
-    <>
+    </div>,
+    <div className="content is-value-page">
       <p className="subtitle">
         For Mentees{" "}
         <span role="img" aria-label="koinobori">
@@ -98,7 +98,7 @@ const ValueComp = () => {
         </div>
         <div className="tile is-1 is-parent" />
       </div>
-    </>,
+    </div>,
   ]
 
   return <PaginationComp title="The Value of a TMP Mentorship" pages={pages} />
