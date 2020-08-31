@@ -4,14 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
-import MenteeProjectsPage from "./mentee-projects"
-import PhilosophyPage from "./philosophy"
+import PastWorkPage from "./past-work"
 import NextBatchPage from "./next-batch"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
-  "Mentee Projects": <MenteeProjectsPage />,
-  Philosophy: <PhilosophyPage />,
+  "Past Batch": <PastWorkPage />,
   "Next Batch": <NextBatchPage />,
 }
 
@@ -30,16 +28,21 @@ class IndexPage extends Component {
   }
 
   renderArticle = i => {
-    return <a onClick={() => this.changeSelectedTab(i)}>{i}</a>
+    return (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
+      <a onClick={() => this.changeSelectedTab(i)} aria-hidden="true">
+        {i}
+      </a>
+    )
   }
 
   renderTabList = selectedTab => {
     return (
-      <div class="tabs is-centered">
+      <div className="tabs is-centered has-text-weight-bold">
         <ul>
           {Object.keys(tabObjs).map(i =>
             selectedTab === i ? (
-              <li class="is-active">{this.renderArticle(i)}</li>
+              <li className="is-active">{this.renderArticle(i)}</li>
             ) : (
               <li>{this.renderArticle(i)}</li>
             )

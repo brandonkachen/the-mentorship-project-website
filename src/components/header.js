@@ -10,18 +10,18 @@ const Header = ({ tabs }) => (
       padding: `1.45rem 1.0875rem`,
     }}
   >
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container has-text-centered">
+    <section className="hero is-small">
+      <div className="hero-body">
+        <div className="container has-text-centered">
           <img
-            class="rounded"
+            className="gray-border"
             src={logo}
             alt="The Mentorship Project"
             style={{ height: 150 }}
           />
 
-          {/* <h1 class="title">The Mentorship Project</h1> */}
-          {/* <h2 class="subtitle">Creating lasting connections</h2> */}
+          {/* <h1 className="title">The Mentorship Project</h1> */}
+          {/* <h2 className="subtitle">Creating lasting connections</h2> */}
         </div>
       </div>
       {tabs}
