@@ -118,7 +118,7 @@ const ValuePage = () => {
     </div>,
   ]
 
-  return <PaginationComp title="The Value of a TMP Mentorship" pages={pages} />
+  return <PaginationComp title="The Value of TMP" pages={pages} />
 }
 
 export default ValuePage
