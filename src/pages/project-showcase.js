@@ -10,7 +10,7 @@ const RickProject = (
         <iframe
           title="Rick Mod Showcase"
           width="100%"
-          height="85%"
+          height="80%"
           src="https://www.youtube.com/embed/CIlrNn9ystY"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -73,15 +73,15 @@ const CarlyProject = (
           Carly created a webtoon comic that guides readers on how to survive
           the year 2020. Her work involved drawing 3 episodes, designing her own
           font (used throughout the webtoon), and creating two central
-          characters. Click{" "}
+          characters. See her{" "}
           <a
             href="https://www.webtoons.com/en/challenge/mentorship-project/_/viewer?title_no=492090&episode_no=1"
             target="_blank"
             rel="noreferrer"
           >
-            here
+            final presentation
           </a>{" "}
-          for her final presentation.
+          to learn more.
         </p>
       </div>
     </div>
@@ -111,15 +111,15 @@ const GabiProject = (
         <p>
           She applied her new skills to create a business proposal for a student
           afterschool program. Her proposal is designed to pitch investors on
-          her idea to help fund and kickstart the program. Click{" "}
+          her idea to help fund and kickstart the program. Check her{" "}
           <a
             href="https://prezi.com/view/ToGJ1cVIUThbAua4mbq6/"
             target="_blank"
             rel="noreferrer"
           >
-            here
+            final presentation
           </a>{" "}
-          to see it.
+          out for the full proposal.
         </p>
       </div>
     </div>
