@@ -43,7 +43,6 @@ const AboutUsPage = () => {
             <p className="subtitle">
               There are four distinct phases for each batch.
             </p>
-            {/* <div className="content"> */}
             <div className="content is-vertical-center">
               <ol>
                 <li>

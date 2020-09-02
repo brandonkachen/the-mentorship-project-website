@@ -633,19 +633,9 @@ pre tt:after {
   border-radius: 5px;
   border: 2px solid #cfd8dc;
 }
-.bottom-right-element {
-  position: relative;
-  bottom: 5px !important;
-  right: 5px !important;
-  z-index: 3 !important;
-  // background-color: red !important;
-}
 .is-vertical-center {
   display: flex;
   align-items: center;
-}
-.is-horizontal-center {
-  justify-content: center;
 }
 .is-centered {
   margin: 0 auto;
@@ -665,7 +655,4 @@ pre tt:after {
   @include desktop {
     height: 300px;
   }
-}
-.nav-tabs {
-  border-bottom: none;
 }
