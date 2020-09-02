@@ -84,14 +84,13 @@ const QuotesComp = () => {
           <div className="message-body">
             <p>
               <q>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                ornare magna eros, eu pellentesque tortor vestibulum ut.
-                Maecenas non massa sem. Etiam finibus odio quis feugiat
-                facilisis.
+                It was thrilling to see my mentee turn high-level concepts we
+                discussed into real code. Seeing his progress over the weeks and
+                how they led to the final result was very gratifying.
               </q>
             </p>
             <figcaption>
-              &mdash; Brandon, Software Developer at Kuna Systems
+              &mdash; Brandon, Software Developer at Kuna Systems (Mentor)
             </figcaption>
           </div>
         </article>
