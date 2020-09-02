@@ -25,6 +25,7 @@ class IndexPage extends Component {
     this.setState({
       selectedTab: newlySelectedTab,
     })
+    window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
   renderArticle = i => {

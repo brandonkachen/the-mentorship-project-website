@@ -14,16 +14,6 @@ import Footer from "./footer"
 import "./layout.scss"
 
 const Layout = ({ children, tabs }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <>
       <Header tabs={tabs} />
@@ -35,7 +25,7 @@ const Layout = ({ children, tabs }) => {
         }}
       >
         <main>{children}</main>
-        <Footer />
+        <Footer tabs={tabs} />
       </div>
     </>
   )
