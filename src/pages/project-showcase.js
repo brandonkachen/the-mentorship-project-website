@@ -1,7 +1,7 @@
 import React from "react"
-import PaginationComp from "../../components/pagination"
-import GabiProjectImg from "../../images/GabiProject.png"
-import CarlyProjectWebpage from "../../images/CarlyProject.png"
+import PaginationComp from "../components/pagination"
+import GabiProjectImg from "../images/GabiProject.png"
+import CarlyProjectWebpage from "../images/CarlyProject.png"
 
 const RickProject = (
   <div className="tile is-ancestor">
@@ -126,11 +126,11 @@ const GabiProject = (
   </div>
 )
 
-const ProjectsComp = () => (
+const ProjectShowcasePage = () => (
   <PaginationComp
     title="Project Showcase"
     pages={[RickProject, CarlyProject, GabiProject]}
   />
 )
 
-export default ProjectsComp
+export default ProjectShowcasePage

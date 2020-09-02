@@ -4,12 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
-import PastWorkPage from "./past-work"
+import PastBatchPage from "./past-batch"
 import NextBatchPage from "./next-batch"
 
 const tabObjs = {
   "About Us": <AboutUsPage />,
-  "Past Batch": <PastWorkPage />,
+  "Past Batch": <PastBatchPage />,
   "Next Batch": <NextBatchPage />,
 }
 
