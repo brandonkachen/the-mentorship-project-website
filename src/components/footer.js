@@ -13,7 +13,9 @@ const Footer = () => {
           >
             <h1 className="title">Let's get in touch</h1>
             <p className="subtitle">
-              If you'd like to learn more, please sign up for updates.
+              If you have any specific questions, please send us{" "}
+              <a href="mailto: hello@thementorshipproject.us">an email</a>.
+              Otherwise, please sign up for updates!
             </p>
             <form
               method="post"

@@ -661,11 +661,11 @@ pre tt:after {
     height: 550px;
   }
 }
-// .is-value-page {
-//   @include desktop {
-//     height: 400px;
-//   }
-// }
+.is-faq-page {
+  @include desktop {
+    height: 300px;
+  }
+}
 .nav-tabs {
   border-bottom: none;
 }
