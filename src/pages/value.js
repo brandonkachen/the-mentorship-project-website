@@ -19,7 +19,10 @@ const ValuePage = () => {
             </p>
             <p>
               Mentors give to the next generation by sharing their knowledge and
-              advice to their mentees.
+              advice to their mentees.{" "}
+              <span role="img" aria-label="flashlight">
+                🔦
+              </span>
             </p>
           </article>
         </div>
@@ -31,7 +34,10 @@ const ValuePage = () => {
             <p>
               Mentors continually chart out plans for their mentees based on
               their progress, teach their mentees new skills, and support their
-              mentee when they run into problems.
+              mentee when they run into problems.{" "}
+              <span role="img" aria-label="map">
+                🗺️
+              </span>
             </p>
           </article>
         </div>
@@ -43,7 +49,10 @@ const ValuePage = () => {
             <p>
               You'll form strong bonds with your fellow batch members that help
               grow your professional network. You'll also have access to our
-              alumni network from our past batches.
+              alumni network from our past batches.{" "}
+              <span role="img" aria-label="globe">
+                🌎
+              </span>
             </p>
           </article>
         </div>
@@ -68,7 +77,10 @@ const ValuePage = () => {
             <p>
               You'll learn more about a new field you may wish to build a career
               in. Past mentees have learned about computer science, design, and
-              business.
+              business.{" "}
+              <span role="img" aria-label="briefcase">
+                💼
+              </span>
             </p>
           </article>
         </div>
@@ -79,7 +91,10 @@ const ValuePage = () => {
             </p>
             <p>
               You'll work on a 10 week project that you brainstorm with your
-              mentor. This project will look great on your resume!
+              mentor. This project will look great on your resume!{" "}
+              <span role="img" aria-label="card index dividers">
+                🗂️
+              </span>
             </p>
           </article>
         </div>
@@ -91,7 +106,10 @@ const ValuePage = () => {
             <p>
               You'll form strong bonds with your fellow batch members that help
               grow your professional network. You'll also have access to our
-              alumni network from our past batches.
+              alumni network from our past batches.{" "}
+              <span role="img" aria-label="globe">
+                🌎
+              </span>
             </p>
           </article>
         </div>
