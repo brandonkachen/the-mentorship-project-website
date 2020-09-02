@@ -1,19 +1,12 @@
 import React from "react"
 import PaginationComp from "../../components/pagination"
-// import GliderImg from "../../images/glider.png"
 import GabiProjectImg from "../../images/GabiProject.png"
-import CarlyProjectWebpage from "../../images/CarlyProjectWebpage.png"
+import CarlyProjectWebpage from "../../images/CarlyProject.png"
 
 const RickProject = (
   <div className="tile is-ancestor">
     <div className="tile is-parent">
       <div className="tile is-child has-text-centered box is-showcase-page">
-        {/* <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
-        <figcaption>
-          A glider mod that can fly. Inspired from the film "Nausicaä of the
-          Valley of the Wind"
-        </figcaption> */}
-
         <iframe
           title="Rick Mod Showcase"
           width="100%"
