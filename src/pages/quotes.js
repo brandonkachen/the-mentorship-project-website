@@ -1,7 +1,7 @@
 import React from "react"
 import PaginationComp from "../components/pagination"
 
-const QuotesComp = () => {
+const QuotesPage = () => {
   const pages = [
     <div className="tile is-ancestor">
       <div className="tile is-vertical is-parent">
@@ -84,14 +84,13 @@ const QuotesComp = () => {
           <div className="message-body">
             <p>
               <q>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                ornare magna eros, eu pellentesque tortor vestibulum ut.
-                Maecenas non massa sem. Etiam finibus odio quis feugiat
-                facilisis.
+                It was thrilling to see my mentee turn high-level concepts we
+                discussed into real code. Seeing his progress over the weeks and
+                how they led to the final result was very gratifying.
               </q>
             </p>
             <figcaption>
-              &mdash; Brandon, Software Developer at Kuna Systems
+              &mdash; Brandon, Software Developer at Kuna Systems (Mentor)
             </figcaption>
           </div>
         </article>
@@ -102,86 +101,4 @@ const QuotesComp = () => {
   return <PaginationComp title="What Our Alumni Say About TMP" pages={pages} />
 }
 
-const TestimonialsPage = () => (
-  <div className="tile is-ancestor">
-    <div className="tile is-7 is-parent">
-      <article
-        className="tile is-child box content"
-        style={{ border: "2px solid turquoise" }}
-      >
-        <h1 className="title">Some Stats</h1>
-        <div className="tile is-ancestor">
-          <div className="tile is-1 is-parent" />
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">
-                Number of <b>Mentees</b>
-              </p>
-              <p>3</p>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">
-                Number of <b>Mentors</b>
-              </p>
-              <p>3</p>
-            </article>
-          </div>
-          <div className="tile is-1 is-parent" />
-        </div>
-        <div className="tile is-ancestor">
-          <div className="tile is-1 is-parent" />
-
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">Overall satisfaction rate</p>
-              <p>100%</p>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">
-                Enjoyment working with other mentees and mentors
-              </p>
-              <p>5/5</p>
-            </article>
-          </div>
-          <div className="tile is-1 is-parent" />
-        </div>
-        <div className="tile is-ancestor">
-          <div className="tile is-1 is-parent" />
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">
-                % of mentees who felt TMP helped improve their{" "}
-                <b>communication skills. </b>
-              </p>
-              <p>100%</p>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="subtitle">
-                % of mentees who felt TMP taught them new{" "}
-                <b>technical skills. </b>
-              </p>
-              <p>100%</p>
-            </article>
-          </div>
-          <div className="tile is-1 is-parent" />
-        </div>
-      </article>
-    </div>
-    <div className="tile is-parent">
-      <article
-        className="tile is-child box content"
-        style={{ border: "2px solid gold" }}
-      >
-        <QuotesComp />
-      </article>
-    </div>
-  </div>
-)
-
-export default TestimonialsPage
+export default QuotesPage

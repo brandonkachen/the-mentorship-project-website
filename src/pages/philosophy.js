@@ -85,8 +85,8 @@ const philosophyPages = [
   variedInterestsPage,
 ]
 
-const PhilosophyComp = () => (
+const PhilosophyPage = () => (
   <PaginationComp title="Our Philosophy" pages={philosophyPages} />
 )
 
-export default PhilosophyComp
+export default PhilosophyPage

@@ -1,30 +1,23 @@
 import React from "react"
-import PaginationComp from "../../components/pagination"
-// import GliderImg from "../../images/glider.png"
-import GabiProjectImg from "../../images/GabiProject.png"
-import CarlyProjectWebpage from "../../images/CarlyProjectWebpage.png"
+import PaginationComp from "../components/pagination"
+import GabiProjectImg from "../images/GabiProject.png"
+import CarlyProjectWebpage from "../images/CarlyProject.png"
 
 const RickProject = (
   <div className="tile is-ancestor">
     <div className="tile is-parent">
       <div className="tile is-child has-text-centered box is-showcase-page">
-        {/* <img src={GliderImg} alt="Glider" style={{ maxHeight: 500 }} />
-        <figcaption>
-          A glider mod that can fly. Inspired from the film "Nausicaä of the
-          Valley of the Wind"
-        </figcaption> */}
-
         <iframe
           title="Rick Mod Showcase"
           width="100%"
-          height="85%"
+          height="80%"
           src="https://www.youtube.com/embed/CIlrNn9ystY"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
         <figcaption>
-          Minecraft modifications ("mods") that Rick custom-developed.
+          Minecraft game elements custom-developed by Rick.
         </figcaption>
       </div>
     </div>
@@ -33,9 +26,14 @@ const RickProject = (
         <p className="title">Rick and Brandon</p>
         <p>
           Rick had recently taken AP Computer Science at his high school and
-          wanted to apply his newfound skills to the game Minecraft. With the
-          help of his mentor Brandon, Rick successfully created all the major
-          types of Minecraft "mods", or modifications. See his{" "}
+          wanted to apply his new skills to the game Minecraft. With the help of
+          his mentor Brandon, Rick successfully created all the major types of
+          Minecraft "mods", or modifications.
+        </p>
+        <p>
+          In the process, he took a peek underneath the hood of how Minecraft
+          works and what developers can do to further build upon the game. See
+          his{" "}
           <a
             href="https://docs.google.com/presentation/d/1rheR37CLtShKCorWbaud4zKbww7S9AVKB5NcpJPtMD0"
             target="_blank"
@@ -43,7 +41,7 @@ const RickProject = (
           >
             final presentation
           </a>{" "}
-          for more information.
+          for more detail.
         </p>
       </div>
     </div>
@@ -57,7 +55,8 @@ const CarlyProject = (
         <img src={CarlyProjectWebpage} alt="Carly's Project" />
 
         <figcaption>
-          A guide to the year 2020, written by Carly in 2020 for Carly in 2019.
+          A webtoon comic guide to the year 2020, drawn by Carly in 2020 for
+          Carly in 2019.
         </figcaption>
       </div>
     </div>
@@ -65,10 +64,16 @@ const CarlyProject = (
       <div className="tile is-child box">
         <p className="title">Carly and Bijun</p>
         <p>
-          Carly was curious about design because she likes to draw and wanted to
-          hone her storytelling skills. With her mentor Bijun's help, Carly
-          successfully created a webtoon comic that guides readers through
-          surviving the year 2020. See her{" "}
+          Carly was curious about design because she liked drawing and wanted to
+          hone her storytelling skills. Under her mentor Bijun's guidance, Carly
+          was able to unleash her creativity while staying focused and on top of
+          the work.
+        </p>
+        <p>
+          Carly created a webtoon comic that guides readers on how to survive
+          the year 2020. Her work involved drawing 3 episodes, designing her own
+          font (used throughout the webtoon), and creating two central
+          characters. See her{" "}
           <a
             href="https://www.webtoons.com/en/challenge/mentorship-project/_/viewer?title_no=492090&episode_no=1"
             target="_blank"
@@ -76,7 +81,7 @@ const CarlyProject = (
           >
             final presentation
           </a>{" "}
-          for more information.
+          to learn more.
         </p>
       </div>
     </div>
@@ -89,7 +94,8 @@ const GabiProject = (
       <div className="tile is-child has-text-centered box is-showcase-page">
         <img src={GabiProjectImg} alt="Gabi's Project" />
         <figcaption>
-          A business proposal for a student afterschool tutoring program.
+          A business proposal for a student afterschool tutoring program created
+          by Gabi.
         </figcaption>
       </div>
     </div>
@@ -97,20 +103,34 @@ const GabiProject = (
       <div className="tile is-child box">
         <p className="title">Gabi and Chris</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
-          magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
-          sem. Etiam finibus odio quis feugiat facilisis.
+          Gabi wanted to learn more about business but had never taken a class
+          or started one herself. Her mentor Chris helped her learn core
+          business concepts, like target audiences and cost modeling on
+          spreadsheets.
+        </p>
+        <p>
+          She applied her new skills to create a business proposal for a student
+          afterschool program. Her proposal is designed to pitch investors on
+          her idea to help fund and kickstart the program. Check her{" "}
+          <a
+            href="https://prezi.com/view/ToGJ1cVIUThbAua4mbq6/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            final presentation
+          </a>{" "}
+          out for the full proposal.
         </p>
       </div>
     </div>
   </div>
 )
 
-const ProjectsComp = () => (
+const ProjectShowcasePage = () => (
   <PaginationComp
     title="Project Showcase"
     pages={[RickProject, CarlyProject, GabiProject]}
   />
 )
 
-export default ProjectsComp
+export default ProjectShowcasePage
