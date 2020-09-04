@@ -129,7 +129,7 @@ const GabiProject = (
 const ProjectShowcasePage = () => (
   <PaginationComp
     title="Project Showcase"
-    pages={[RickProject, CarlyProject, GabiProject]}
+    pages={[CarlyProject, RickProject, GabiProject]}
   />
 )
 
