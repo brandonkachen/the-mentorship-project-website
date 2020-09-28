@@ -8,8 +8,8 @@ import PastBatchPage from "./past-batch"
 import NextBatchPage from "./next-batch"
 
 const tabObjs = {
-  "About Us": <AboutUsPage />,
   "Past Batch": <PastBatchPage />,
+  "About Us": <AboutUsPage />,
   "Next Batch": <NextBatchPage />,
 }
 
