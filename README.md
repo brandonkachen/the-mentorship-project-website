@@ -42,7 +42,12 @@ Website: <a href="https://thementorshipproject.us">https://thementorshipproject.
     
 ## ⚙️ How It Works
 
-The project is primarily located in the `/src/` folder. When loading the site, Gatsby loads the `src/pages/index.js.` file by default. For this simple site, there are no other routes. When the index file is loaded, it sets a header and footer using `/src/components/header.js` and `src/components/footer.js`, respectively. It also sends the component for three tabs ("Past Batch", "About Us", and "Next Batch") and to both header and footer. Finally, it loads whatever page is being viewed (by default, that's the "Past Batch"). When the user switches tabs, React will load the new page and re-render.
+The project is primarily located in the `/src/` folder. When loading the site, the following happens:
+1. Gatsby loads the `src/pages/index.js.` file by default. For this simple site, there are no other routes. 
+
+2. React sets a header and footer using `/src/components/header.js` and `src/components/footer.js`, respectively. It also sends the component for three tabs ("Past Batch", "About Us", and "Next Batch") and to both header and footer. 
+
+3. React loads whatever page is being viewed (by default, that's the "Past Batch"). When the user switches tabs, React will load the new page and re-render.
 
 ## 💫 Deploy
 
