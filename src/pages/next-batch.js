@@ -116,12 +116,11 @@ const NextBatchPage = () => (
             All times are tentative and subject to change
           </p>
           <div className="content">
-            <p>Mentor volunteer clearances begin &mdash; 9/13</p>
-            <p>Mentee applications begin &mdash; 9/20</p>
-            <p>Mentee interviews begin &mdash; 9/27</p>
-            <p>Mentee decisions &mdash; Week of 10/4</p>
-            <p>Program start &mdash; Week of 10/11</p>
-            <p>Program end &mdash; Week of 12/13</p>
+            <p>Mentee applications &mdash; 10/21 - 10/31</p>
+            <p>Mentee interviews &mdash; 10/22 - 11/6 </p>
+            <p>Mentee decisions &mdash; 11/7 (latest)</p>
+            <p>Program start &mdash; Week of 11/8</p>
+            <p>Program end &mdash; Week of 1/10</p>
           </div>
         </article>
       </div>
