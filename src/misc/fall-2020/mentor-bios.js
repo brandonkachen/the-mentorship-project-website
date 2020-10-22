@@ -96,7 +96,7 @@ const MentorBios = [
       <>
         <p>
           Hi there, I’m Richard. I’ll be supporting you in any{" "}
-          <b>mental health</b> projects that you’d like to take on. I’m current
+          <b>mental health</b> projects that you’d like to take on. I’m currently
           a Post-Masters Fellow at{" "}
           <a
             href="https://healthy.kaiserpermanente.org/northern-california/facilities/richmond-medical-center-100336"
