@@ -1,5 +1,5 @@
 import React from "react"
-import PaginationComp from "../components/pagination"
+import PaginationComp from "../../components/pagination"
 
 const FAQPage = () => {
   const pages = [
@@ -76,8 +76,6 @@ const NextBatchPage = () => (
               </span>
             </li>
 
-            {/* <li>Become certified with the San Mateo Unified School District to be a volunteer.</li> */}
-
             <li>
               Love teaching and guiding.{" "}
               <span role="img" aria-label="teacher">
@@ -116,11 +114,21 @@ const NextBatchPage = () => (
             All times are tentative and subject to change
           </p>
           <div className="content">
-            <p>Mentee applications &mdash; 10/21 - 10/31</p>
-            <p>Mentee interviews &mdash; 10/22 - 11/6 </p>
-            <p>Mentee decisions &mdash; 11/7 (latest)</p>
-            <p>Program start &mdash; Week of 11/8</p>
-            <p>Program end &mdash; Week of 1/10</p>
+            <p>
+              Mentee applications &mdash; <b>10/21 - 10/31</b>
+            </p>
+            <p>
+              Mentee interviews &mdash; <b>10/22 - 11/6</b>{" "}
+            </p>
+            <p>
+              Mentee decisions &mdash; <b>11/7 (latest)</b>
+            </p>
+            <p>
+              Program start &mdash; <b>Week of 11/8</b>
+            </p>
+            <p>
+              Program end &mdash; <b>Week of 1/10</b>
+            </p>
           </div>
         </article>
       </div>
