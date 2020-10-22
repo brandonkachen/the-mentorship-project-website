@@ -1,19 +1,22 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import logo from "../images/logo.png"
 
 const Header = ({ tabs }) => (
   <>
-    <div class="notification is-primary">
-      <a href="fall-2020" rel="noreferrer">
-        <div className="container has-text-centered">
-          <b>
-            Applications for Fall 2020 are live! Click here to learn more and
-            apply.
-          </b>
-        </div>
-      </a>
-    </div>
+    {tabs ? (
+      <div class="notification is-primary">
+        <Link to="fall-2020" rel="noreferrer" target="_blank">
+          <div className="container has-text-centered">
+            <b>
+              Applications for Fall 2020 are live! Click here to learn more and
+              apply.
+            </b>
+          </div>
+        </Link>
+      </div>
+    ) : null}
     <header
       style={{
         margin: `0 auto`,
