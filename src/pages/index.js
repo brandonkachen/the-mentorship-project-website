@@ -5,12 +5,10 @@ import SEO from "../components/seo"
 
 import AboutUsPage from "./about-us"
 import PastBatchPage from "./past-batch"
-import NextBatchPage from "./next-batch"
 
 const tabObjs = {
-  "Past Batch": <PastBatchPage />,
+  "Summer 2020": <PastBatchPage />,
   "About Us": <AboutUsPage />,
-  "Next Batch": <NextBatchPage />,
 }
 
 class IndexPage extends Component {

@@ -8,7 +8,7 @@ const Header = ({ tabs }) => (
       <a href="winter-2020" rel="noreferrer">
         <div className="container has-text-centered">
           <b>
-            Applications for Winter 2020 are live! Click here learn more and
+            Applications for Winter 2020 are live! Click here to learn more and
             apply.
           </b>
         </div>
