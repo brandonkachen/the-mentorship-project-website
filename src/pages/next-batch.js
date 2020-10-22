@@ -76,8 +76,6 @@ const NextBatchPage = () => (
               </span>
             </li>
 
-            {/* <li>Become certified with the San Mateo Unified School District to be a volunteer.</li> */}
-
             <li>
               Love teaching and guiding.{" "}
               <span role="img" aria-label="teacher">
