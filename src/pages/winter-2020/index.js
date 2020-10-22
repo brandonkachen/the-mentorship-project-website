@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import MentorBios from "./mentor-bios"
+import MentorBios from "../../misc/winter-2020/mentor-bios"
 import NextBatchPage from "./next-batch"
 
 const MenteeApp = "https://forms.gle/bRHAdhMBPo9wAtSFA"
