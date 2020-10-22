@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import MentorBios from "../../misc/winter-2020/mentor-bios"
+import MentorBios from "../../misc/fall-2020/mentor-bios"
 import NextBatchPage from "./next-batch"
 
 const MenteeApp = "https://forms.gle/bRHAdhMBPo9wAtSFA"
@@ -39,7 +39,7 @@ class IndexPage extends Component {
               style={{ border: "2px solid gold" }}
             >
               <p className="title">
-                Instructions for Mentee Applications (Winter 2020)
+                Instructions for Mentee Applications (Fall 2020)
               </p>
               <ol>
                 <li>Read through the mini bios of the mentors below.</li>
@@ -71,7 +71,7 @@ class IndexPage extends Component {
               className="tile is-child box content"
               style={{ border: "2px solid turquoise" }}
             >
-              <p className="title">Mentors for Winter 2020</p>
+              <p className="title">Mentors (Fall 2020)</p>
               <p className="subtitle">
                 Hey there!{" "}
                 <span role="img" aria-label="waving hand">

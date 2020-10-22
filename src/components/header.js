@@ -5,10 +5,10 @@ import logo from "../images/logo.png"
 const Header = ({ tabs }) => (
   <>
     <div class="notification is-primary">
-      <a href="winter-2020" rel="noreferrer">
+      <a href="fall-2020" rel="noreferrer">
         <div className="container has-text-centered">
           <b>
-            Applications for Winter 2020 are live! Click here to learn more and
+            Applications for Fall 2020 are live! Click here to learn more and
             apply.
           </b>
         </div>
