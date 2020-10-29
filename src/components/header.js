@@ -7,14 +7,12 @@ const Header = ({ tabs }) => (
   <>
     {tabs ? (
       <div class="notification is-primary">
-        <Link to="fall-2020" rel="noreferrer" target="_blank">
-          <div className="container has-text-centered">
-            <b>
-              Applications for Fall 2020 are live! Click here to learn more and
-              apply.
-            </b>
-          </div>
-        </Link>
+        <div className="container has-text-centered">
+          Applications for Fall 2020 are live!<br></br>
+          <Link to="fall-2020" rel="noreferrer" target="_blank">
+            <b>Learn more and apply here.</b>
+          </Link>
+        </div>
       </div>
     ) : null}
     <header

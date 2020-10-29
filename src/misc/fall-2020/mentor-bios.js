@@ -47,6 +47,10 @@ const MentorBios = [
             🎓
           </span>
         </p>
+        <p>
+          If you're interested in learning how to run and grow a small business,
+          I can help with that!
+        </p>
       </>
     ),
   },
@@ -86,6 +90,10 @@ const MentorBios = [
             🎓
           </span>
         </p>
+        <p>
+          If you're interested in learning about startups or how to build and
+          ship products, I can help with that!
+        </p>
       </>
     ),
   },
@@ -96,8 +104,8 @@ const MentorBios = [
       <>
         <p>
           Hi there, I’m Richard. I’ll be supporting you in any{" "}
-          <b>mental health</b> projects that you’d like to take on. I’m currently
-          a Post-Masters Fellow at{" "}
+          <b>mental health and medical</b> projects that you’d like to take on.
+          I’m currently a Post-Masters Fellow at{" "}
           <a
             href="https://healthy.kaiserpermanente.org/northern-california/facilities/richmond-medical-center-100336"
             target="_blank"
@@ -124,6 +132,10 @@ const MentorBios = [
           <span role="img" aria-label="graduation cap">
             🎓
           </span>
+        </p>
+        <p>
+          If you're interested in building a career in medicine and/or mental
+          health, I can help with that!
         </p>
       </>
     ),
@@ -162,6 +174,10 @@ const MentorBios = [
             👩🏻‍🎓
           </span>
         </p>
+        <p>
+          If you're interested in learning more about the accounting industry, I
+          can help with that!
+        </p>
       </>
     ),
   },
@@ -194,6 +210,10 @@ const MentorBios = [
           <span role="img" aria-label="graduation cap">
             🎓
           </span>
+        </p>
+        <p>
+          If you're interested in building a career in software engineering, I
+          can help with that!
         </p>
       </>
     ),

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -53,7 +54,11 @@ class IndexPage extends Component {
                 <li>
                   Don't worry! We may take up to a week to read through your
                   submission but we will reach out to <b>everyone</b> who
-                  applied.
+                  applied. While you're waiting, you can{" "}
+                  <Link to="/" rel="noreferrer" target="_blank">
+                    learn more
+                  </Link>{" "}
+                  about our program.
                 </li>
               </ol>
               <p>
@@ -101,8 +106,6 @@ class IndexPage extends Component {
             </article>
           </div>
         </div>
-
-        <section className="section" />
 
         <NextBatchPage />
       </Layout>
