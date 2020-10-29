@@ -13,7 +13,7 @@ const MentorBios = [
     bio: (
       <>
         <p>
-          Hi, I'm Leehans! I'll be mentoring in <b>business management</b>. I'm
+          Hi, I'm Leehans! I'll be mentoring on <b>business management</b>. I'm
           currently an Administrative Manager for{" "}
           <a href="https://gmequipment.com" target="_blank" rel="noreferrer">
             General Medical Equipment
@@ -48,8 +48,8 @@ const MentorBios = [
           </span>
         </p>
         <p>
-          If you're interested in learning how to run and grow a small business,
-          I can help with that!
+          If you're interested in learning how to{" "}
+          <b>run and grow a small business</b>, I can help with that!
         </p>
       </>
     ),
@@ -60,8 +60,8 @@ const MentorBios = [
     bio: (
       <>
         <p>
-          Hi, I'm Jamika and I will be mentoring on building{" "}
-          <b>startup companies</b>. As the founder of{" "}
+          Hi, I'm Jamika and I will be mentoring on <b>entrepreneurship</b>. As
+          the founder of{" "}
           <a
             href="https://www.rosenskincare.com"
             target="_blank"
@@ -91,8 +91,8 @@ const MentorBios = [
           </span>
         </p>
         <p>
-          If you're interested in learning about startups or how to build and
-          ship products, I can help with that!
+          If you're interested in learning about <b>startups</b> or how to{" "}
+          <b>build and ship products</b>, I can help with that!
         </p>
       </>
     ),
@@ -134,8 +134,8 @@ const MentorBios = [
           </span>
         </p>
         <p>
-          If you're interested in building a career in medicine and/or mental
-          health, I can help with that!
+          If you're interested in building a{" "}
+          <b>career in medicine and/or mental health</b>, I can help with that!
         </p>
       </>
     ),
@@ -146,7 +146,7 @@ const MentorBios = [
     bio: (
       <>
         <p>
-          Hi! My name is Vicki and I will be mentoring in <b>accounting</b>. I
+          Hi! My name is Vicki and I will be mentoring on <b>accounting</b>. I
           am a licensed CPA and currently working as a financial accountant at{" "}
           <a
             href="https://www.globalatlantic.com"
@@ -175,8 +175,8 @@ const MentorBios = [
           </span>
         </p>
         <p>
-          If you're interested in learning more about the accounting industry, I
-          can help with that!
+          If you're interested in learning more about the{" "}
+          <b>accounting industry</b>, I can help with that!
         </p>
       </>
     ),
