@@ -5,16 +5,6 @@ import logo from "../images/logo.png"
 
 const Header = ({ tabs }) => (
   <>
-    {tabs ? (
-      <div class="notification is-primary">
-        <div className="container has-text-centered">
-          Applications for Fall 2020 are live!<br></br>
-          <Link to="fall-2020" rel="noreferrer" target="_blank">
-            <b>Learn more and apply here.</b>
-          </Link>
-        </div>
-      </div>
-    ) : null}
     <header
       style={{
         margin: `0 auto`,
@@ -35,6 +25,16 @@ const Header = ({ tabs }) => (
             </a>
           </div>
         </div>
+        {tabs ? (
+          <div class="notification is-primary">
+            <div className="container has-text-centered">
+              Applications for Fall 2020 are live!<br></br>
+              <Link to="fall-2020" rel="noreferrer" target="_blank">
+                <b>Learn more and apply here.</b>
+              </Link>
+            </div>
+          </div>
+        ) : null}
         {tabs}
       </section>
     </header>

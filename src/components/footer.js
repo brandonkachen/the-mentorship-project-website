@@ -1,17 +1,26 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = ({ tabs }) => {
   return (
     <>
-      <section className="section" />
+      {/* <section className="section" /> */}
       <section className="hero is-small">
         <div className="hero-body">{tabs}</div>
       </section>
+      <div class="notification is-primary">
+        <div className="container has-text-centered">
+          Applications for Fall 2020 are live!<br></br>
+          <Link to="fall-2020" rel="noreferrer" target="_blank">
+            <b>Learn more and apply here.</b>
+          </Link>
+        </div>
+      </div>
       <div className="tile is-ancestor">
         <div className="tile is-parent">
-          <div className="tile is-child" />
+          <div className="tile is-child is-1" />
           <article
-            className="tile is-6 is-child box"
+            className="tile is-fullwidth is-child box"
             style={{ border: "2px solid #cfd8dc" }}
           >
             <h1 className="title">Let's get in touch</h1>
@@ -81,7 +90,7 @@ const Footer = ({ tabs }) => {
               </div>
             </form>
           </article>
-          <div className="tile is-child" />
+          <div className="tile is-child is-1" />
         </div>
       </div>
     </>
