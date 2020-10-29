@@ -212,7 +212,7 @@ const MentorBios = [
           </span>
         </p>
         <p>
-          If you're interested in building a career in software engineering, I
+          If you're interested in building a career in <b>software engineering</b>, I
           can help with that!
         </p>
       </>
