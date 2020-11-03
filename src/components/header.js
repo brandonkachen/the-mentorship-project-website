@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import logo from "../images/logo.png"
 
@@ -25,7 +25,7 @@ const Header = ({ tabs }) => (
             </a>
           </div>
         </div>
-        {tabs ? (
+        {/* {tabs ? (
           <div class="notification is-primary">
             <div className="container has-text-centered">
               Applications for Fall 2020 are live!<br></br>
@@ -34,7 +34,7 @@ const Header = ({ tabs }) => (
               </Link>
             </div>
           </div>
-        ) : null}
+        ) : null} */}
         {tabs}
       </section>
     </header>

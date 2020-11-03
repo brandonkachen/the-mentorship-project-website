@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 const Footer = ({ tabs }) => {
   return (
@@ -8,7 +8,7 @@ const Footer = ({ tabs }) => {
       <section className="hero is-small">
         <div className="hero-body">{tabs}</div>
       </section>
-      {tabs ? (
+      {/* {tabs ? (
         <div class="notification is-primary">
           <div className="container has-text-centered">
             Applications for Fall 2020 are live!<br></br>
@@ -17,7 +17,7 @@ const Footer = ({ tabs }) => {
             </Link>
           </div>
         </div>
-      ) : null}
+      ) : null} */}
       <div className="tile is-ancestor">
         <div className="tile is-parent">
           <div className="tile is-child is-1" />
